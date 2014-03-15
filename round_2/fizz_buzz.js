@@ -4,23 +4,15 @@ var fs = require('fs');
 
 module.exports = {
   do_something_async: function(some_parameter, callback) {
-    var result = some_operation_on_parameter(some_parameter);
-    var error;
-
-    if('something_went_wrong' === true) {
-      error = 'my_error_message';
-    }
-
-    callback(error, result);
+    some_file_reading_async_operation(some_parameter, callback);
   }
 };
 
-function some_operation_on_parameter(parameter) {
-  var filepath = __dirname + '/input_files/files_to_read';
+function some_file_reading_async_operation(parameter, callback) {
+  var filepath = __dirname + '/input_files/file_a';
+  
   fs.readFile(filepath, 'utf8', function(error, lines) {
-    console.log('We are reading a file for no reason');
-    _(lines).each(function(line){
-      console.log('Here is a line: ', line);
-    });
+    var we_can_parse_as_json = JSON.parse(lines);
+    callback(error, we_can_parse_as_json);
   });
 }
