@@ -28,9 +28,19 @@ We are going to solve three katas today.
   ```
   
 ##### Round 2:
-  In round 2 we will once again solve the fizz buzz kata, but we will read the number stream from files. We have a bunch of files in the directory `input_files/`, and we will read those listed in `input_files/files_to_read`. We will process them (they are json files), and output the fizzbuzz conversion of them, **no matter in which order**.
+  In round 2 we will once again solve the fizz buzz kata, but we will read the number stream from files. We have a bunch of files in the directory `input_files/`, and we will read those listed in `input_files/files_to_read`. We will process them (they are json files), and output the fizzbuzz conversion of them, **no matter in which order**. Feel free to reuse the code of the round 1.
   
   To run the tests, cd into round_2 directory and run:
   ```
   jasmine-node --captureExceptions .
   ```
+
+##### Round 3:
+  In round 3 we will repeat the exercise in the round 2, but this time we will avoid using callbacks, and instead use promises. Feel free to reuse your code from round 2.
+  
+  Again, to run the tests, cd into round_2 directory and run:
+  ```
+  jasmine-node --captureExceptions .
+  ```
+
+Have fun!
