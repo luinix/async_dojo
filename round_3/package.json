@@ -1,0 +1,12 @@
+{
+  "name": "async_dojo_round_1",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node fizz_buzz_spec.js"
+  },
+  "dependencies": {
+    "underscore": "1.5.1",
+    "q": "*"
+  }
+}
