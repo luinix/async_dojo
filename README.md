@@ -38,7 +38,7 @@ We are going to solve three katas today.
 ##### Round 3:
   In round 3 we will repeat the exercise in the round 2, but this time we will avoid using callbacks, and instead use promises. Feel free to reuse your code from round 2.
   
-  Again, to run the tests, cd into round_2 directory and run:
+  Again, to run the tests, cd into round_3 directory and run:
   ```
   jasmine-node --captureExceptions .
   ```
